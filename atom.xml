@@ -4,7 +4,7 @@
   <subtitle><![CDATA[微信平台wechat-php-sdk开源项目，开发文档blog]]></subtitle>
   <link href="/wechat-php-sdk/atom.xml" rel="self"/>
   <link href="https://binsee.github.io/wechat-php-sdk/"/>
-  <updated>2014-09-22T11:53:05.892Z</updated>
+  <updated>2014-09-22T12:01:04.283Z</updated>
   <id>https://binsee.github.io/wechat-php-sdk/</id>
   
   <author>
@@ -42,7 +42,7 @@
     <link href="https://binsee.github.io/wechat-php-sdk/2014/09/22/aboutwiki/"/>
     <id>https://binsee.github.io/wechat-php-sdk/2014/09/22/aboutwiki/</id>
     <published>2014-09-22T08:04:29.000Z</published>
-    <updated>2014-09-22T11:52:39.000Z</updated>
+    <updated>2014-09-22T12:00:09.000Z</updated>
     <content type="html"><![CDATA[<h1 id="wechat-php-sdk项目wiki使用说明"><a href="https://github.com/binsee/wechat-php-sdk/tree/master/wiki" title="wechat-php-sdk项目上的wiki目录" target="_blank" rel="external">wechat-php-sdk项目wiki</a>使用说明</h1>
 <hr>
 <p><strong><a href="https://github.com/binsee/wechat-php-sdk" title="wechat-php-sdk项目" target="_blank" rel="external">wechat-php-sdk项目</a></strong>的wiki文档<br>Make By：binsee</p>
@@ -77,14 +77,8 @@
 <li><p>进入新出现的 <code>wechat-php-sdk.wiki</code> 目录，把wiki目录下的文件都复制过来</p>
 </li>
 </ul>
-<blockquote>
-<p><strong>这里有个高级用法，就是使用连接方式把wiki目录链接过来，而不是复制</strong><br>windows下的用法:<br>  如项目目录为：E:\wechat-php-sdk\<br>  项目wiki目录为:E:\wechat-php-sdk.wiki\<br>  执行命令：</p>
-</blockquote>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mklink /j E:<span class="command">\wechat</span>-php-sdk.wiki<span class="command">\wiki</span> E:<span class="command">\wechat</span>-php-sdk<span class="command">\wiki</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="special">#</span>这里有个高级用法，就是使用连接方式把wiki目录链接过来，而不是复制</div><div class="line">windows下的用法:  </div><div class="line">如项目目录为：E:<span class="command">\wechat</span>-php-sdk<span class="command">\</span></div><div class="line">项目wiki目录为：E:<span class="command">\wechat</span>-php-sdk.wiki<span class="command">\</span></div><div class="line">执行命令：</div><div class="line">        mklink /j E:<span class="command">\wechat</span>-php-sdk.wiki<span class="command">\wiki</span> E:<span class="command">\wechat</span>-php-sdk<span class="command">\wiki</span></div><div class="line">这样的话，两个目录就会被联接到一起。</div><div class="line">以后进行更改wiki在哪个目录都行，另一个目录都是同步的。</div><div class="line">分别在 项目目录 和 项目wiki目录 进行git提交就可以了。</div></pre></td></tr></table></figure>
 
-<blockquote>
-<p>这样的话，两个目录就会被联接到一起。<br>以后进行更改wiki在哪个目录都行，另一个目录都是同步的。<br>分别在 项目目录 和 项目wiki目录 进行git提交就可以了。 </p>
-</blockquote>
 <ul>
 <li><p>然后直接缓存上传即可。</p>
 </li>
