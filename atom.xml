@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[wechat-php-sdk Blog]]></title>
-  <subtitle><![CDATA[微信平台wechat-php-sdk开源项目，开发文档blog_ver 1]]></subtitle>
+  <subtitle><![CDATA[微信平台wechat-php-sdk开源项目，开发文档blog]]></subtitle>
   <link href="/wechat-php-sdk/atom.xml" rel="self"/>
   <link href="https://binsee.github.io/wechat-php-sdk/"/>
-  <updated>2014-09-22T10:35:48.531Z</updated>
+  <updated>2014-09-22T10:42:15.975Z</updated>
   <id>https://binsee.github.io/wechat-php-sdk/</id>
   
   <author>
@@ -13,6 +13,27 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[wiki更新日志]]></title>
+    <link href="https://binsee.github.io/wechat-php-sdk/2014/09/22/wiki%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    <id>https://binsee.github.io/wechat-php-sdk/2014/09/22/wiki更新日志/</id>
+    <published>2014-09-22T10:37:46.000Z</published>
+    <updated>2014-09-22T10:39:37.000Z</updated>
+    <content type="html"><![CDATA[<p>2014/09/22 18:38:52<br>重新调整框架，修复上部菜单问题</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>2014/09/22 18:38:52<br>重新调整框架，修复上部菜单问题</p>
+]]>
+    </summary>
+    
+      <category term="更新" scheme="https://binsee.github.io/wechat-php-sdk/tags/%E6%9B%B4%E6%96%B0/"/>
+    
+      <category term="日志" scheme="https://binsee.github.io/wechat-php-sdk/tags/%E6%97%A5%E5%BF%97/"/>
+    
+      <category term="项目文档" scheme="https://binsee.github.io/wechat-php-sdk/categories/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[wechat-php-sdk项目]]></title>
