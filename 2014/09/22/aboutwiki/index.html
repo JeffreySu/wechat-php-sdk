@@ -1,0 +1,608 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>wiki文档说明 | wechat-php-sdk Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="binsee">
+    
+    <meta name="description" itemprop="description" content="wechat-php-sdk项目的wiki文档说明">
+    
+    
+    
+    
+    <link rel="alternate" href="/atom.xml" title="wechat-php-sdk Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/wechat-php-sdk/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/wechat-php-sdk/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/wechat-php-sdk/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/wechat-php-sdk/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/wechat-php-sdk/"><img src="/wechat-php-sdk/img/logo.svg" alt="wechat-php-sdk Blog" title="wechat-php-sdk Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/wechat-php-sdk/" title="wechat-php-sdk Blog">wechat-php-sdk Blog</a></h1>
+				<h2 class="blog-motto">微信平台wechat-php-sdk开源项目，开发文档blog_ver 1</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/wechat-php-sdk/">首页</a></li>
+					
+						<li><a href="/wechat-php-sdk/archives">文档</a></li>
+					
+						<li><a href="/wechat-php-sdk/categories">分类</a></li>
+					
+						<li><a href="/wechat-php-sdk/about">关于项目</a></li>
+					
+					
+				
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+					
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:binsee.github.io/wechat-php-sdk">
+					</form>
+					
+					</li>
+					
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/wechat-php-sdk/2014/09/22/aboutwiki/" title="wiki文档说明" itemprop="url">wiki文档说明</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="https://binsee.github.io/wechat-php-sdk" title="binsee">binsee</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2014-09-22T08:04:29.000Z" itemprop="datePublished">2014年09月22日</time>
+    更新日期:<time datetime="2014-09-22T09:32:51.000Z" itemprop="dateModified">2014年09月22日</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#wiki目录说明"><span class="toc-number">1.</span> <span class="toc-text">wiki目录说明</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#说明"><span class="toc-number">1.1.</span> <span class="toc-text">说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为你的github生成wiki"><span class="toc-number">1.2.</span> <span class="toc-text">为你的github生成wiki</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用步骤："><span class="toc-number">1.2.1.</span> <span class="toc-text">使用步骤：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成page"><span class="toc-number">1.3.</span> <span class="toc-text">生成page</span></a></li></ol></li></ol>
+		</div>
+		
+		<h1 id="wiki目录说明"><a href="https://github.com/binsee/wechat-php-sdk/tree/master/wiki" title="wechat-php-sdk项目上的 wiki目录" target="_blank" rel="external">wiki目录</a>说明</h1>
+<p>这个目录是<strong><a href="https://github.com/binsee/wechat-php-sdk&quot;wechat-php-sdk项目&quot;" target="_blank" rel="external">wechat-php-sdk</a></strong>项目的wiki文档<br>Make By：binsee</p>
+<h2 id="说明">说明</h2>
+<p><strong>这里的wiki文档可以让你更好的了解<code>wechat-php-sdk</code>项目，更好的使用。 </strong></p>
+<p><strong>欢迎对wiki文档内容进行补充，把<code>wechat-php-sdk</code>项目变得更清晰易懂。</strong></p>
+<h2 id="为你的github生成wiki">为你的github生成<a href="https://github.com/binsee/wechat-php-sdk/wiki" target="_blank" rel="external">wiki</a></h2>
+<p><strong>如果你在github上fork了<code>wechat-php-sdk</code>项目，而且想为项目生成wiki，可以用这里的文件来生成。</strong></p>
+<h3 id="使用步骤：">使用步骤：</h3>
+<ol>
+<li><p>在你的github上，fork或者创建<code>wechat-php-sdk</code>项目</p>
+</li>
+<li><p>激活项目wiki，已激活的请跳过</p>
+</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">进入项目的设置页面：</div><div class="line">http<span class="variable">s:</span>//github.<span class="keyword">com</span>/你的用户名/wechat-php-sdk/settings</div><div class="line">找到Features一栏，把 Wikis 选项打钩，就可以激活你项目的wiki了</div></pre></td></tr></table></figure>
+
+<ol>
+<li><p>进入项目的wiki页面：<br><code>https://github.com/你的用户名/wechat-php-sdk/wiki</code></p>
+</li>
+<li><p>点绿色的 <code>Create the first page</code> 按钮</p>
+</li>
+<li><p>直接到下方点 <code>Save Page</code> 按钮</p>
+</li>
+<li><p>在右边找到 <code>Clone this wiki locally</code> 一栏，复制git地址：<br><code>git@github.com:你的用户名/wechat-php-sdk.wiki.git</code></p>
+</li>
+<li><p>在项目的上一层目录执行<br><code>git clone git@github.com:你的用户名/wechat-php-sdk.wiki.git</code></p>
+</li>
+<li><p>进入新出现的 <code>wechat-php-sdk.wiki</code> 目录，把wiki目录下的文件都复制过来</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>这里有个高级用法，就是使用连接方式把wiki目录链接过来，而不是复制</strong><br>windows下的用法:</p>
+</blockquote>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="special">#</span>如项目目录为：E:<span class="command">\wechat</span>-php-sdk<span class="command">\</span></div><div class="line"><span class="special">#</span>项目wiki目录为:E:<span class="command">\wechat</span>-php-sdk.wiki<span class="command">\</span></div><div class="line">执行命令：</div><div class="line">mklink /j E:<span class="command">\wechat</span>-php-sdk.wiki<span class="command">\wiki</span> E:<span class="command">\wechat</span>-php-sdk<span class="command">\wiki</span></div></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这样的话，两个目录就会被联接到一起。<br>以后进行更改wiki在哪个目录都行，另一个目录都是同步的。<br>分别在 项目目录 和 项目wiki目录 进行git提交就可以了。 </p>
+</blockquote>
+<ol>
+<li><p>然后直接缓存上传即可。</p>
+</li>
+<li><p>现在去你github上项目的wiki目录里看一下吧</p>
+</li>
+</ol>
+<h2 id="生成page">生成page</h2>
+<p><strong>你也可以将wiki文档，生成为个人站点，会更加直观。</strong></p>
+<p><strong>比如使用 Hexo 或者其他的框架之类。</strong></p>
+<p><strong>这块的话，请自行搜索相关资料。</strong>  </p>
+<p><strong>现在你所看到wiki Blog就是使用Hexo框架生成的.</strong></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/wechat-php-sdk/tags/wiki/">wiki</a><a href="/wechat-php-sdk/tags/page/">page</a><a href="/wechat-php-sdk/tags/说明/">说明</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/wechat-php-sdk/categories/项目文档/">项目文档</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="https://binsee.github.io/wechat-php-sdk/2014/09/22/aboutwiki/" data-title="wiki文档说明 | wechat-php-sdk Blog" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/wechat-php-sdk/2014/09/22/README/" title="wechat-php-sdk项目">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  wechat-php-sdk项目</span>
+</a>
+</div>
+
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#wiki目录说明"><span class="toc-number">1.</span> <span class="toc-text">wiki目录说明</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#说明"><span class="toc-number">1.1.</span> <span class="toc-text">说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为你的github生成wiki"><span class="toc-number">1.2.</span> <span class="toc-text">为你的github生成wiki</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用步骤："><span class="toc-number">1.2.1.</span> <span class="toc-text">使用步骤：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成page"><span class="toc-number">1.3.</span> <span class="toc-text">生成page</span></a></li></ol></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="recentlist">
+  <p class="asidetitle">近期文章</p>
+  <ul class="entry">
+    
+      <li>
+        <a href="/wechat-php-sdk/2014/09/22/README/">wechat-php-sdk项目</a>
+      </li>
+    
+      <li>
+        <a href="/wechat-php-sdk/2014/09/22/aboutwiki/">wiki文档说明</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle"><a href="/wechat-php-sdk/tags">标签</a></p>
+		<ul class="clearfix">
+		
+			<li><a href="/wechat-php-sdk/tags/page/" title="page">page<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/wiki/" title="wiki">wiki<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/企业号/" title="企业号">企业号<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/使用/" title="使用">使用<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/公众号/" title="公众号">公众号<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/功能/" title="功能">功能<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/文档/" title="文档">文档<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/示例/" title="示例">示例<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/说明/" title="说明">说明<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/项目/" title="项目">项目<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle"><a href="/wechat-php-sdk/categories">分类</a></p>
+		<ul>
+		
+			<li><a href="/wechat-php-sdk/categories/项目文档/" title="项目文档">项目文档<sup>2</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle"><a href="/wechat-php-sdk/tags">标签云</a></p>
+    <div class="tagcloudlist clearfix">
+       <a href="/wechat-php-sdk/tags/page/" style="font-size: NaNpx;">page</a><a href="/wechat-php-sdk/tags/wiki/" style="font-size: NaNpx;">wiki</a><a href="/wechat-php-sdk/tags/企业号/" style="font-size: NaNpx;">企业号</a><a href="/wechat-php-sdk/tags/使用/" style="font-size: NaNpx;">使用</a><a href="/wechat-php-sdk/tags/公众号/" style="font-size: NaNpx;">公众号</a><a href="/wechat-php-sdk/tags/功能/" style="font-size: NaNpx;">功能</a><a href="/wechat-php-sdk/tags/文档/" style="font-size: NaNpx;">文档</a><a href="/wechat-php-sdk/tags/示例/" style="font-size: NaNpx;">示例</a><a href="/wechat-php-sdk/tags/说明/" style="font-size: NaNpx;">说明</a><a href="/wechat-php-sdk/tags/项目/" style="font-size: NaNpx;">项目</a>
+    </div>
+  </div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/wechat-php-sdk/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/wechat-php-sdk/archives/2014/09/">September 2014</a><span class="archive-list-count">2</span></li></ul>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+	  
+        <li>
+		  <a href="https://github.com/dodgepudding/wechat-php-sdk" target="_blank" title="wechat-php-sdk on Github for dodgepudding">dodgepudding's Github</a>
+        </li>
+      
+        <li>
+		  <a href="https://github.com/binsee/wechat-php-sdk" target="_blank" title="wechat-php-sdk on Github for binsee">binsee's Github</a>
+        </li>
+      
+    </ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hi!I&#39;m binsee. <br/>
+			This is my GitHub Blog for wechat-php-sdk.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		<a href="https://github.com/binsee/wechat-php-sdk" target="_blank" title="github"></a>
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2014 
+		
+		<a href="https://binsee.github.io/wechat-php-sdk" target="_blank" title="binsee">binsee</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/wechat-php-sdk/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"binsee"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+  </body>
+</html>

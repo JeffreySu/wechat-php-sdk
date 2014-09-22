@@ -1,0 +1,807 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>wechat-php-sdk项目 | wechat-php-sdk Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="binsee">
+    
+    <meta name="description" content="wechat-php-sdk项目
+微信公众平台php开发包,细化各项接口操作,支持链式调用,欢迎Fork此项目.weixin developer SDK.项目地址：https://github.com/dodgepudding/wechat-php-sdk项目wiki：http://binsee.g">
+    
+    
+    
+    
+    <link rel="alternate" href="/atom.xml" title="wechat-php-sdk Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/wechat-php-sdk/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/wechat-php-sdk/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/wechat-php-sdk/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/wechat-php-sdk/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/wechat-php-sdk/"><img src="/wechat-php-sdk/img/logo.svg" alt="wechat-php-sdk Blog" title="wechat-php-sdk Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/wechat-php-sdk/" title="wechat-php-sdk Blog">wechat-php-sdk Blog</a></h1>
+				<h2 class="blog-motto">微信平台wechat-php-sdk开源项目，开发文档blog_ver 1</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/wechat-php-sdk/">首页</a></li>
+					
+						<li><a href="/wechat-php-sdk/archives">文档</a></li>
+					
+						<li><a href="/wechat-php-sdk/categories">分类</a></li>
+					
+						<li><a href="/wechat-php-sdk/about">关于项目</a></li>
+					
+					
+				
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+					
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:binsee.github.io/wechat-php-sdk">
+					</form>
+					
+					</li>
+					
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/wechat-php-sdk/2014/09/22/README/" title="wechat-php-sdk项目" itemprop="url">wechat-php-sdk项目</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="https://binsee.github.io/wechat-php-sdk" title="binsee">binsee</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2014-09-22T08:04:29.000Z" itemprop="datePublished">2014年09月22日</time>
+    更新日期:<time datetime="2014-09-22T09:32:39.000Z" itemprop="dateModified">2014年09月22日</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#wechat-php-sdk项目"><span class="toc-number">1.</span> <span class="toc-text">wechat-php-sdk项目</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用详解"><span class="toc-number">1.1.</span> <span class="toc-text">使用详解</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#项目内容"><span class="toc-number">2.</span> <span class="toc-text">项目内容</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方API类库"><span class="toc-number">2.1.</span> <span class="toc-text">官方API类库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主要功能"><span class="toc-number">2.1.1.</span> <span class="toc-text">主要功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化动作"><span class="toc-number">2.1.2.</span> <span class="toc-text">初始化动作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新增Auth高级权限类方法"><span class="toc-number">2.1.3.</span> <span class="toc-text">新增Auth高级权限类方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#非官方扩展API类库"><span class="toc-number">2.2.</span> <span class="toc-text">非官方扩展API类库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#类主要方法"><span class="toc-number">2.2.1.</span> <span class="toc-text">类主要方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#授权登陆类库"><span class="toc-number">2.3.</span> <span class="toc-text">授权登陆类库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#类主要方法-1"><span class="toc-number">2.3.1.</span> <span class="toc-text">类主要方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#内嵌JS脚本"><span class="toc-number">2.4.</span> <span class="toc-text">内嵌JS脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#微信内嵌网页特殊功能js调用："><span class="toc-number">2.4.1.</span> <span class="toc-text">微信内嵌网页特殊功能js调用：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#全局返回码类"><span class="toc-number">2.5.</span> <span class="toc-text">全局返回码类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用方法"><span class="toc-number">2.5.1.</span> <span class="toc-text">使用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#企业号API类库"><span class="toc-number">2.6.</span> <span class="toc-text">企业号API类库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主要功能-1"><span class="toc-number">2.6.1.</span> <span class="toc-text">主要功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化动作-1"><span class="toc-number">2.6.2.</span> <span class="toc-text">初始化动作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#被动接口方法"><span class="toc-number">2.6.3.</span> <span class="toc-text">被动接口方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#主动接口方法"><span class="toc-number">2.6.4.</span> <span class="toc-text">主动接口方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#调用示例"><span class="toc-number">3.</span> <span class="toc-text">调用示例</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方Wechat调用示例："><span class="toc-number">3.1.</span> <span class="toc-text">官方Wechat调用示例：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#扩展包Wechatext调用示例:"><span class="toc-number">3.2.</span> <span class="toc-text">扩展包Wechatext调用示例:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#微信二维码Wechatauth登陆示例:"><span class="toc-number">3.3.</span> <span class="toc-text">微信二维码Wechatauth登陆示例:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#企业号API类库调用示例："><span class="toc-number">3.4.</span> <span class="toc-text">企业号API类库调用示例：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#License"><span class="toc-number">4.</span> <span class="toc-text">License</span></a></li></ol>
+		</div>
+		
+		<h1 id="wechat-php-sdk项目">wechat-php-sdk项目</h1>
+<p>微信公众平台php开发包,细化各项接口操作,支持链式调用,<br>欢迎Fork此项目.<br>weixin developer SDK.<br>项目地址：<strong><a href="https://github.com/dodgepudding/wechat-php-sdk" target="_blank" rel="external">https://github.com/dodgepudding/wechat-php-sdk</a></strong><br>项目wiki：<strong><a href="http://binsee.github.io/wechat-php-sdk" target="_blank" rel="external">http://binsee.github.io/wechat-php-sdk</a></strong>  </p>
+<h2 id="使用详解">使用详解</h2>
+<p>使用前需先打开微信帐号的开发模式，详细步骤请查看微信公众平台接口使用说明：<br>微信公众平台： <a href="http://mp.weixin.qq.com/wiki/" target="_blank" rel="external">http://mp.weixin.qq.com/wiki/</a><br>微信企业平台： <a href="http://qy.weixin.qq.com/wiki/" target="_blank" rel="external">http://qy.weixin.qq.com/wiki/</a></p>
+<p>微信支付接入文档：<a href="https://mp.weixin.qq.com/cgi-bin/readtemplate?t=business/course2_tmpl" target="_blank" rel="external">https://mp.weixin.qq.com/cgi-bin/readtemplate?t=business/course2_tmpl</a></p>
+<p>微信多客服：<a href="http://dkf.qq.com" target="_blank" rel="external">http://dkf.qq.com</a></p>
+<h1 id="项目内容">项目内容</h1>
+<h2 id="官方API类库">官方API类库</h2>
+<blockquote>
+<p><strong>wechat.class.php</strong><br>调用官方API，具有更灵活的消息分类响应方式，支持链式调用操作 ； </p>
+</blockquote>
+<h3 id="主要功能">主要功能</h3>
+<ul>
+<li>接入验证 （初级权限）</li>
+<li>自动回复（文本、图片、语音、视频、音乐、图文）（初级权限）</li>
+<li>菜单操作（查询、创建、删除）（菜单权限）</li>
+<li>客服消息（文本、图片、语音、视频、音乐、图文）（认证权限）</li>
+<li>二维码（创建临时、永久二维码，获取二维码URL）（认证权限）</li>
+<li>长链接转短链接接口（认证权限）</li>
+<li>分组操作（查询、创建、修改、移动用户到分组）（认证权限）</li>
+<li>网页授权（基本授权，用户信息授权）（认证权限）</li>
+<li>用户信息（查询用户基本信息、获取关注者列表）（认证权限）</li>
+<li>多客服功能（认证权限）</li>
+<li>媒体文件（上传、获取）（认证权限） </li>
+<li>调用地址组件 （支付权限） </li>
+<li>生成订单签名数据 （支付权限） </li>
+<li>订单成功回调 （支付权限） </li>
+<li>发货通知 （支付权限） </li>
+<li>支付订单查询 （支付权限） </li>
+<li>模板消息（支付权限） </li>
+</ul>
+<h3 id="初始化动作">初始化动作</h3>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$options</span> = <span class="keyword">array</span>(</div><div class="line"><span class="string">'token'</span>=&gt;<span class="string">'tokenaccesskey'</span>, <span class="comment">//填写你设定的key</span></div><div class="line"><span class="string">'appid'</span>=&gt;<span class="string">'wxdk1234567890'</span>, <span class="comment">//填写高级调用功能的app id, 请在微信开发模式后台查询</span></div><div class="line"><span class="string">'appsecret'</span>=&gt;<span class="string">'xxxxxxxxxxxxxxxxxxx'</span>, <span class="comment">//填写高级调用功能的密钥</span></div><div class="line"><span class="string">'partnerid'</span>=&gt;<span class="string">'88888888'</span>, <span class="comment">//财付通商户身份标识，支付权限专用，没有可不填</span></div><div class="line"><span class="string">'partnerkey'</span>=&gt;<span class="string">''</span>, <span class="comment">//财付通商户权限密钥Key，支付权限专用</span></div><div class="line"><span class="string">'paysignkey'</span>=&gt;<span class="string">''</span> <span class="comment">//商户签名密钥Key，支付权限专用</span></div><div class="line">);</div><div class="line"><span class="variable">$weObj</span> = <span class="keyword">new</span> Wechat(<span class="variable">$options</span>); <span class="comment">//创建实例对象</span></div><div class="line"><span class="comment">//TODO：调用$weObj各实例方法</span></div></pre></td></tr></table></figure>
+
+<h3 id="新增Auth高级权限类方法">新增Auth高级权限类方法</h3>
+<ul>
+<li>checkAuth($appid,$appsecret) 此处传入公众后台高级接口提供的appid和appsecret, 函数将返回access_token操作令牌</li>
+<li>createMenu($data) 创建菜单 $data菜单结构详见 <a href="http://mp.weixin.qq.com/wiki/index.php?title=%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E5%88%9B%E5%BB%BA%E6%8E%A5%E5%8F%A3" target="_blank" rel="external">http://mp.weixin.qq.com/wiki/index.php?title=%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E5%88%9B%E5%BB%BA%E6%8E%A5%E5%8F%A3</a> </li>
+<li>getMenu() 获取菜单 </li>
+<li>deleteMenu() 删除菜单 </li>
+<li>uploadMedia($data, $type) 上传多媒体文件</li>
+<li>getMedia() 获取接收到的音频、视频媒体文件 </li>
+<li>uploadArticles($data) 上传图文消息素材</li>
+<li>sendMassMessage($data) 高级群发消息</li>
+<li>sendGroupMassMessage($data) 高级群发消息（分组群发）</li>
+<li>deleteMassMessage() 删除群发图文消息</li>
+<li>getQRCode($scene_id,$type=0,$expire=1800) 获取推广二维码ticket字串 </li>
+<li>getQRUrl($ticket) 获取二维码图片地址</li>
+<li>getShortUrl($long_url) 长链接转短链接接口</li>
+<li>getUserList($next_openid) 批量获取关注用户列表 </li>
+<li>getUserInfo($openid) 获取关注者详细信息 </li>
+<li>updateUserRemark($openid,$remark) 设置用户备注名</li>
+<li>getGroup() 获取用户分组列表 </li>
+<li>getUserGroup($openid) 获取用户所在分组</li>
+<li>createGroup($name) 新增自定分组 </li>
+<li>updateGroup($groupid,$name) 更改分组名称 </li>
+<li>updateGroupMembers($groupid,$openid) 移动用户分组  </li>
+<li>sendCustomMessage($data) 发送客服消息  </li>
+<li>getOauthRedirect($callback,$state,$scope) 获取网页授权oAuth跳转地址  </li>
+<li>getOauthAccessToken() 通过回调的code获取网页授权access_token  </li>
+<li>getOauthRefreshToken($refresh_token) 通过refresh_token对access_token续期  </li>
+<li>getOauthUserinfo($access_token,$openid) 通过网页授权的access_token获取用户资料  </li>
+<li>getOauthAuth($access_token,$openid)  检验授权凭证access_token是否有效</li>
+<li>getSignature($arrdata,’sha1’) 生成签名字串  </li>
+<li>generateNonceStr($length) 获取随机字串  </li>
+<li>createPackage($out_trade_no,$body,$total_fee,$notify_url,$spbill_create_ip,$fee_type=1,$bank_type=”WX”,$input_charset=”UTF-8”,$time_start=””,$time_expire=””,$transport_fee=””,$product_fee=””,$goods_tag=””,$attach=””) 生成订单package字符串  </li>
+<li>getPaySign($package, $timeStamp, $nonceStr) 支付签名(paySign)生成方法  </li>
+<li>checkOrderSignature($orderxml=’’) 回调通知签名验证  </li>
+<li>sendPayDeliverNotify($openid,$transid,$out_trade_no,$status=1,$msg=’ok’) 发货通知  </li>
+<li>getPayOrder($out_trade_no) 查询订单信息  </li>
+<li>getAddrSign($url, $timeStamp, $nonceStr, $user_token=’’) 获取收货地址JS的签名</li>
+<li>sendTemplateMessage($data) 发送模板消息</li>
+<li>getCustomServiceMessage($data) 获取多客服会话记录</li>
+<li>transfer_customer_service($customer_account) 转发多客服消息</li>
+<li>getCustomServiceKFlist() 获取多客服客服基本信息</li>
+<li>getCustomServiceOnlineKFlist() 获取多客服在线客服接待信息</li>
+</ul>
+<h2 id="非官方扩展API类库">非官方扩展API类库</h2>
+<blockquote>
+<p><strong>wechatext.class.php </strong><br>非官方扩展API，需要配置公众平台账户和密码，能实现对已关注用户的点对点微信，此方式不保证长期有效。 </p>
+</blockquote>
+<p>类方法里提及的用户id在接口返回结构里表述为FakeId, 属同一概念, 在下面wechatauth类里则表示为Uin, 用户id对应的微信号必须通过getInfo()方法通过返回数组的Username值获取, 但非关注关系用户资料不能获取.<br>调用下列方法前必须经过login()方法和checkValid()验证方法才能获得调用权限. 有的账户无法通过登陆可能因为要求提供验证码, 可以手动登陆后把获取到的cookie写进程序存放cookie的文件解决.<br>程序使用了经过修改的snoopy兼容式HTTP类方法, 在类似BAE/SAE云服务器上可能不能正常运行, 因为云服务的curl方法是经过重写的, 某些header参数如网站来源参数不被支持.  </p>
+<h3 id="类主要方法">类主要方法</h3>
+<ul>
+<li>send($id,$content) 向某用户id发送微信文字信息 </li>
+<li>sendNews($id,$msgid) 发送图文消息, 可通过getNewsList获取$msgid</li>
+<li>getUserList($page,$pagesize,$groupid) 获取用户信息</li>
+<li>getGroupList($page,$pagesize) 获取群组信息</li>
+<li>getNewsList($page,$pagesize) 获取图文信息列表 </li>
+<li>uploadFile($filepath,$type) 上传附件,包括图片/音频/视频/缩略图</li>
+<li>getFileList($type,$page,$pagesize) 获取素材库文件列表</li>
+<li>sendImage($id,$fid) 发送图片消息</li>
+<li>sendAudio($id,$fid) 发送音频消息</li>
+<li>sendVideo($id,$fid) 发送视频消息 </li>
+<li>getInfo($id) 根据id获取用户资料,注: 非关注关系用户资料不能获取  </li>
+<li>getNewMsgNum($lastid) 获取从$lastid算起新消息的数目  </li>
+<li>getTopMsg() 获取最新一条消息的数据, 此方法获取的消息id可以作为检测新消息的$lastid依据  </li>
+<li>getMsg($lastid,$offset=0,$perpage=50,$day=0,$today=0,$star=0) 获取最新的消息列表, 列表将返回消息id, 用户id, 消息类型, 文字消息等参数  </li>
+<li>消息返回结构:  {“id”:”消息id”,”type”:”类型号(1为文字,2为图片,3为语音)”,”fileId”:”0”,”hasReply”:”0”,”fakeId”:”用户uid”,”nickName”:”昵称”,”dateTime”:”时间戳”,”content”:”文字内容”}   </li>
+<li>getMsgImage($msgid,$mode=’large’) 若消息type类型为2, 调用此方法获取图片数据  </li>
+<li>getMsgVoice($msgid) 若消息type类型为3, 调用此方法获取语音数据  </li>
+</ul>
+<h2 id="授权登陆类库">授权登陆类库</h2>
+<blockquote>
+<p><strong>wechatauth.class.php</strong><br>通过微信二维码登陆微信的API, 能实现第三方网站同步登陆。</p>
+</blockquote>
+<p>首先程序分别通过get_login_code和get_code_image方法获取授权二维码图片, 然后利用微信手机客户端扫描二维码图片后将自动跳出授权页面, 用户点击授权后即可获取对应的用户资料和头像信息. 详细验证步骤请看test3.php例子.   </p>
+<h3 id="类主要方法-1">类主要方法</h3>
+<ul>
+<li>get_login_code() 获取登陆授权码, 通过授权码才能获取二维码  </li>
+<li>get_code_image($code=’’) 将上面获取的授权码转换为图片二维码  </li>
+<li>verify_code() 鉴定是否登陆成功,返回200为最终授权成功.  </li>
+<li>get_login_info() 鉴定成功后调用此方法即可获取用户基本信息  </li>
+<li>get_avatar($url) 获取用户头像图片数据  </li>
+<li>logout() 注销登陆  </li>
+</ul>
+<h2 id="内嵌JS脚本">内嵌JS脚本</h2>
+<blockquote>
+<p><strong>wechat.js </strong><br>通过调用js脚本，让使用微信打开的网页达到特定效果</p>
+</blockquote>
+<h3 id="微信内嵌网页特殊功能js调用：">微信内嵌网页特殊功能js调用：</h3>
+<ul>
+<li>WeixinJS.hideOptionMenu() 隐藏右上角按钮</li>
+<li>WeixinJS.showOptionMenu() 显示右上角按钮</li>
+<li>WeixinJS.hideToolbar() 隐藏工具栏</li>
+<li>WeixinJS.showToolbar() 显示工具栏</li>
+<li>WeixinJS.getNetworkType() 获取网络状态</li>
+<li>WeixinJS.closeWindow() 关闭窗口</li>
+<li>WeixinJS.scanQRCode() 扫描二维码</li>
+<li>WeixinJS.openUrlByExtBrowser(url) 使用浏览器打开网址</li>
+<li>WeixinJS.jumpToBizProfile(username) 跳转到指定公众账号页面</li>
+<li>WeixinJS.sendEmail(title,content) 发送邮件</li>
+<li>WeixinJS.openProductView(latitude,longitude,name,address,scale,infoUrl) 查看地图</li>
+<li>WeixinJS.addContact(username) 添加微信账号</li>
+<li>WeixinJS.imagePreview(urls,current) 调出微信内图片预览</li>
+<li>WeixinJS.payCallback(appId,package,timeStamp,nonceStr,signType,paySign,callback) 微信JsApi支付接口</li>
+<li>WeixinJS.editAddress(appId,addrSign,timeStamp,nonceStr,callback) 微信JsApi支付接口</li>
+<li>通过定义全局变量dataForWeixin配置触发分享的内容：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> dataForWeixin={</div><div class="line">   appId:<span class="string">""</span>,</div><div class="line">   MsgImg:<span class="string">"消息图片路径"</span>,</div><div class="line">   TLImg:<span class="string">"时间线图路径"</span>,</div><div class="line">   url:<span class="string">"分享url路径"</span>,</div><div class="line">   title:<span class="string">"标题"</span>,</div><div class="line">   desc:<span class="string">"描述"</span>,</div><div class="line">   fakeid:<span class="string">""</span>,</div><div class="line">   callback:<span class="function"><span class="keyword">function</span><span class="params">()</span></span>{}</div><div class="line">};</div></pre></td></tr></table></figure>
+
+<h2 id="全局返回码类">全局返回码类</h2>
+<blockquote>
+<p>errCode.php<br>当调用API接口失败时，可以用此类来换取失败原因的中文说明。</p>
+</blockquote>
+<h3 id="使用方法">使用方法</h3>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">include</span> <span class="string">"errCode.php"</span>;</div><div class="line"></div><div class="line"><span class="variable">$ret</span>=ErrCode::getErrText(<span class="number">48001</span>);</div><div class="line"></div><div class="line"><span class="keyword">if</span> (<span class="variable">$ret</span>) </div><div class="line">	<span class="keyword">echo</span> <span class="variable">$ret</span>;</div><div class="line"><span class="keyword">else</span> </div><div class="line">    <span class="keyword">echo</span> <span class="string">"未找到对应的内容"</span>;</div></pre></td></tr></table></figure>
+
+<h2 id="企业号API类库">企业号API类库</h2>
+<blockquote>
+<p><strong> qywechat.class.php</strong><br>调用官方API，具有更灵活的消息分类响应方式，支持链式调用操作 ； </p>
+</blockquote>
+<h3 id="主要功能-1">主要功能</h3>
+<ul>
+<li>接入验证 （初级权限）</li>
+<li>自动回复（文本、图片、语音、视频、音乐、图文）</li>
+<li>菜单操作（查询、创建、删除）</li>
+<li>部门管理（创建、更新、删除、获取列表）</li>
+<li>成员管理（创建、更新、删除、获取成员信息，获取部门成员列表）</li>
+<li>标签管理（创建、更新、删除、获取成员、添加成员、删除成员）</li>
+<li>媒体文件管理（上传、获取）</li>
+<li>二次验证</li>
+<li>OAuth2（生成授权url、获取成员信息）</li>
+</ul>
+<h3 id="初始化动作-1">初始化动作</h3>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$options</span> = <span class="keyword">array</span>(</div><div class="line">  <span class="string">'token'</span>=&gt;<span class="string">'tokenaccesskey'</span>, <span class="comment">//填写应用接口的Token</span></div><div class="line">  <span class="string">'encodingaeskey'</span>=&gt;<span class="string">'encodingaeskey'</span>, <span class="comment">//填写加密用的EncodingAESKey</span></div><div class="line">  <span class="string">'appid'</span>=&gt;<span class="string">'wxdk1234567890'</span>, <span class="comment">//填写高级调用功能的app id</span></div><div class="line">  <span class="string">'appsecret'</span>=&gt;<span class="string">'xxxxxxxxxxxxxxxxxxx'</span>, <span class="comment">//填写高级调用功能的密钥</span></div><div class="line">  <span class="string">'agentid'</span>=&gt;<span class="string">'1'</span>, <span class="comment">//应用的id</span></div><div class="line">  <span class="string">'debug'</span>=&gt;<span class="keyword">false</span>, <span class="comment">//调试开关</span></div><div class="line">  <span class="string">'_logcallback'</span>=&gt;<span class="string">'logg'</span>, <span class="comment">//调试输出方法，需要有一个string类型的参数</span></div><div class="line">);</div><div class="line"> <span class="variable">$weObj</span> = <span class="keyword">new</span> Wechat(<span class="variable">$options</span>); <span class="comment">//创建实例对象</span></div><div class="line"> <span class="comment">//TODO：调用$weObj各实例方法</span></div></pre></td></tr></table></figure>
+
+<h3 id="被动接口方法">被动接口方法</h3>
+<ul>
+<li>valid() 验证连接</li>
+<li></li>
+<li>getRev() 获取微信服务器发来信息(不返回结果)</li>
+<li>getRevData() 返回微信服务器发来的信息（数组）</li>
+<li>getRevPostXml() 返回微信服务器发来的原始加密xml信息</li>
+<li>getRevFrom()  返回消息发送者的userid</li>
+<li>getRevTo()  返回消息接收者的id（即公众号id，一般与等同appid一致）</li>
+<li>getRevAgentID() 返回接收消息的应用id</li>
+<li>getRevType() 返回接收消息的类型</li>
+<li>getRevID() 返回消息id</li>
+<li>getRevCtime() 返回消息发送事件</li>
+<li>getRevContent() 返回消息内容正文（文本型消息）</li>
+<li>getRevPic() 返回图片信息（图片型信息） 返回数组{‘mediaid’=&gt;’’,’picurl’=&gt;’’}</li>
+<li>getRevGeo() 返回地理位置（位置型信息） 返回数组{‘x’=&gt;’’,’y’=&gt;’’,’scale’=&gt;’’,’label’=&gt;’’}</li>
+<li>getRevEventGeo() 返回事件地理位置（事件型信息） 返回数组{‘x’=&gt;’’,’y’=&gt;’’,’precision’=&gt;’’}</li>
+<li>getRevEvent() 返回事件类型（事件型信息） 返回数组{‘event’=&gt;’’,’key’=&gt;’’}</li>
+<li>getRevVoice() 返回语音信息（语音型信息） 返回数组{‘mediaid’=&gt;’’,’format’=&gt;’’}</li>
+<li>getRevVoice() 返回语音信息（语音型信息） 返回数组{‘mediaid’=&gt;’’,’format’=&gt;’’}</li>
+<li>getRevVideo() 返回视频信息（视频型信息） 返回数组{‘mediaid’=&gt;’’,’thumbmediaid’=&gt;’’}</li>
+<li></li>
+<li>text($text) 设置文本型消息，参数：文本内容</li>
+<li>image($mediaid) 设置图片型消息，参数：图片的media_id</li>
+<li>voice($mediaid) 设置语音型消息，参数：语音的media_id</li>
+<li>video($mediaid=’’,$title,$description) 设置视频型消息，参数：视频的media_id、标题、摘要</li>
+<li>news($newsData) 设置图文型消息，参数：数组。数组结构见php文件内方法说明</li>
+<li>image($mediaid) 设置图片型消息，参数：图片的media_id</li>
+<li>Message($msg = ‘’,$append = false) 设置发送的消息（一般不需要调用这个方法）</li>
+<li>reply() 将已经设置好的消息，回复给微信服务器</li>
+</ul>
+<h3 id="主动接口方法">主动接口方法</h3>
+<ul>
+<li>checkAuth($appid=’’,$appsecret=’’) 通用auth验证方法,也用来换取ACCESS_TOKEN</li>
+<li>resetAuth($appid=’’) 清除记录的ACCESS_TOKEN</li>
+<li>createMenu($data,$agentid=’’) 创建菜单,参数:菜单内容数组,要创建菜单应用id</li>
+<li>getMenu($agentid=’’) 获取菜单内容,参数:要获取菜单内容的应用id</li>
+<li>deleteMenu($agentid=’’) 删除菜单,参数:要删除菜单的应用id</li>
+<li>uploadMedia($data, $type) 上传媒体文件,参数请看php文件内方法说明</li>
+<li>getMedia($media_id) 根据媒体文件ID获取媒体文件,参数:媒体id</li>
+<li>createDepartment($data) 创建部门,参数: array(“name”=&gt;”邮箱产品组”,”parentid”=&gt;”1”)</li>
+<li>updateDepartment($data) 更新部门,参数: array(“id”=&gt;”1”，”name”=&gt;”邮箱产品组”)</li>
+<li>deleteDepartment($id) 删除部门,参数：要删除的部门id</li>
+<li>getDepartment() 获取部门列表，返回部门数组</li>
+<li>createUser($data) 创建成员，参数请看php文件内方法说明</li>
+<li>updateUser($data) 更新成员，参数请看php文件内方法说明</li>
+<li>deleteUser($userid) 删除成员，参数：员工UserID</li>
+<li>getUserInfo($userid) 获取成员信息，参数：员工UserID</li>
+<li>getUserList($department_id,$fetch_child=0,$status=0) 获取部门成员，参数：部门id，是否递归获取子部门，获取类型。<blockquote>
+<p>0获取全部员工，1获取已关注成员列表，2获取禁用成员列表，4获取未关注成员列表。status可叠加</p>
+</blockquote>
+</li>
+<li>createTag($data) 创建标签，参数：array(“tagname” =&gt; “UI”)</li>
+<li>updateTag($data) 更新标签，参数：array(“tagid” =&gt; “1”,”tagname” =&gt; “UI”)</li>
+<li>deleteTag($tagid) 删除标签，参数：标签TagID</li>
+<li>getTag($tagid) 获取标签成员，参数：标签TagID</li>
+<li>addTagUser($data) 增加标签成员，参数请看php文件内方法说明</li>
+<li>delTagUser($data) 删除标签成员，参数请看php文件内方法说明</li>
+<li>sendMessage($data) 主动发送信息接口，参数请看php文件内方法说明</li>
+<li>authSucc($code,$userid) 二次验证，参数： 员工授权获取到的code,$userid</li>
+<li>getOauthRedirect($callback,$state=’STATE’,$scope=’snsapi_base’) 组合授权跳转接口url</li>
+</ul>
+<hr>
+<h1 id="调用示例">调用示例</h1>
+<h2 id="官方Wechat调用示例：">官方Wechat调用示例：</h2>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//test1.php</span></div><div class="line"><span class="keyword">include</span> <span class="string">"wechat.class.php"</span>;</div><div class="line"><span class="variable">$options</span> = <span class="keyword">array</span>(</div><div class="line">		<span class="string">'token'</span>=&gt;<span class="string">'tokenaccesskey'</span> <span class="comment">//填写你设定的key</span></div><div class="line">	);</div><div class="line"><span class="variable">$weObj</span> = <span class="keyword">new</span> Wechat(<span class="variable">$options</span>);</div><div class="line"><span class="variable">$weObj</span><span class="variable">-&gt;valid</span>(); <span class="comment">//注意, 应用验证通过后,可将此句注释掉, 但会降低网站安全性</span></div><div class="line"><span class="variable">$type</span> = <span class="variable">$weObj</span><span class="variable">-&gt;getRev</span>()<span class="variable">-&gt;getRevType</span>();</div><div class="line"><span class="keyword">switch</span>(<span class="variable">$type</span>) {</div><div class="line">	<span class="keyword">case</span> Wechat::MSGTYPE_TEXT:</div><div class="line">			<span class="variable">$weObj</span><span class="variable">-&gt;text</span>(<span class="string">"hello, I'm wechat"</span>)<span class="variable">-&gt;reply</span>();</div><div class="line">			<span class="keyword">exit</span>;</div><div class="line">			<span class="keyword">break</span>;</div><div class="line">	<span class="keyword">case</span> Wechat::MSGTYPE_EVENT:</div><div class="line">			<span class="keyword">break</span>;</div><div class="line">	<span class="keyword">case</span> Wechat::MSGTYPE_IMAGE:</div><div class="line">			<span class="keyword">break</span>;</div><div class="line">	<span class="keyword">default</span>:</div><div class="line">			<span class="variable">$weObj</span><span class="variable">-&gt;text</span>(<span class="string">"help info"</span>)<span class="variable">-&gt;reply</span>();</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<h2 id="扩展包Wechatext调用示例:">扩展包Wechatext调用示例:</h2>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//test2.php </span></div><div class="line">	<span class="keyword">include</span> <span class="string">"wechatext.class.php"</span>;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">logdebug</span><span class="params">(<span class="variable">$text</span>)</span></span>{</div><div class="line">		file_put_contents(<span class="string">'./data/log.txt'</span>,<span class="variable">$text</span>.<span class="string">"\n"</span>,FILE_APPEND);		</div><div class="line">	};</div><div class="line">	</div><div class="line">	<span class="variable">$options</span> = <span class="keyword">array</span>(</div><div class="line">		<span class="string">'account'</span>=&gt;<span class="string">'demo@domain.com'</span>,</div><div class="line">		<span class="string">'password'</span>=&gt;<span class="string">'demo'</span>,</div><div class="line">		<span class="string">'datapath'</span>=&gt;<span class="string">'./data/cookie_'</span>,</div><div class="line">			<span class="string">'debug'</span>=&gt;<span class="keyword">true</span>,</div><div class="line">			<span class="string">'logcallback'</span>=&gt;<span class="string">'logdebug'</span>	</div><div class="line">	); </div><div class="line">	<span class="variable">$wechat</span> = <span class="keyword">new</span> Wechatext(<span class="variable">$options</span>);</div><div class="line">	<span class="keyword">if</span> (<span class="variable">$wechat</span><span class="variable">-&gt;checkValid</span>()) {</div><div class="line">		<span class="comment">// 获取用户信息</span></div><div class="line">		<span class="variable">$data</span> = <span class="variable">$wechat</span><span class="variable">-&gt;getInfo</span>(<span class="string">'3974255'</span>);</div><div class="line">		var_dump(<span class="variable">$data</span>);</div><div class="line">		<span class="comment">// 获取最新一条消息</span></div><div class="line">		<span class="variable">$topmsg</span> = <span class="variable">$wechat</span><span class="variable">-&gt;getTopMsg</span>();</div><div class="line">		var_dump(<span class="variable">$topmsg</span>);</div><div class="line">		<span class="comment">// 主动回复消息</span></div><div class="line">		<span class="keyword">if</span> (<span class="variable">$topmsg</span> && <span class="variable">$topmsg</span>[<span class="string">'has_reply'</span>]==<span class="number">0</span>)</div><div class="line">		<span class="variable">$wechat</span><span class="variable">-&gt;send</span>(<span class="variable">$topmsg</span>[<span class="string">'fakeid'</span>],<span class="string">'hi '</span>.<span class="variable">$topmsg</span>[<span class="string">'nick_name'</span>].<span class="string">',rev:'</span>.<span class="variable">$topmsg</span>[<span class="string">'content'</span>]);	</div><div class="line">	}</div></pre></td></tr></table></figure>
+
+<h2 id="微信二维码Wechatauth登陆示例:">微信二维码Wechatauth登陆示例:</h2>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//test3.php</span></div><div class="line">	<span class="keyword">include</span> <span class="string">"../wechatauth.class.php"</span>;</div><div class="line">	session_start();</div><div class="line">	<span class="variable">$sid</span>  = session_id();</div><div class="line">	<span class="variable">$options</span> = <span class="keyword">array</span>(</div><div class="line">		<span class="string">'account'</span>=&gt;<span class="variable">$sid</span>,</div><div class="line">		<span class="string">'datapath'</span>=&gt;<span class="string">'../data/cookiecode_'</span>,</div><div class="line">	); </div><div class="line">	<span class="variable">$wechat</span> = <span class="keyword">new</span> Wechatauth(<span class="variable">$options</span>);</div><div class="line">	</div><div class="line">	<span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$_POST</span>[<span class="string">'code'</span>])) {</div><div class="line">		<span class="variable">$logincode</span> = <span class="variable">$_POST</span>[<span class="string">'code'</span>];</div><div class="line">		<span class="variable">$vres</span> = <span class="variable">$wechat</span><span class="variable">-&gt;set_login_code</span>(<span class="variable">$logincode</span>)<span class="variable">-&gt;verify_code</span>();</div><div class="line">		<span class="keyword">if</span> (<span class="variable">$vres</span>===<span class="keyword">false</span>) {</div><div class="line">			<span class="variable">$result</span> = <span class="keyword">array</span>(<span class="string">'status'</span>=&gt;<span class="number">0</span>);</div><div class="line">		} <span class="keyword">else</span> {</div><div class="line">			<span class="variable">$result</span> = <span class="keyword">array</span>(<span class="string">'status'</span>=&gt;<span class="variable">$vres</span>);</div><div class="line">			<span class="keyword">if</span> (<span class="variable">$vres</span>==<span class="number">200</span>) {</div><div class="line">				<span class="variable">$result</span>[<span class="string">'info'</span>] = <span class="variable">$wechat</span><span class="variable">-&gt;get_login_info</span>();</div><div class="line">				<span class="variable">$result</span>[<span class="string">'cookie'</span>] = <span class="variable">$wechat</span><span class="variable">-&gt;get_login_cookie</span>(<span class="keyword">true</span>);</div><div class="line">			}</div><div class="line">		}</div><div class="line">		</div><div class="line">		<span class="keyword">die</span>(json_encode(<span class="variable">$result</span>));	</div><div class="line">	}</div><div class="line">	<span class="variable">$logincode</span> =  <span class="variable">$wechat</span><span class="variable">-&gt;get_login_code</span>(); <span class="comment">//获取授权码</span></div><div class="line">	<span class="variable">$qrimg</span> = <span class="variable">$wechat</span><span class="variable">-&gt;get_code_image</span>(); <span class="comment">//待输出的二维码图片</span></div></pre></td></tr></table></figure>
+
+<p>HTML部分请看test/test3.php, 主要是定时ajax查询是否已经授权成功</p>
+<h2 id="企业号API类库调用示例：">企业号API类库调用示例：</h2>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//test1.php</span></div><div class="line"><span class="keyword">include</span> <span class="string">"wechat.class.php"</span>;</div><div class="line"><span class="variable">$options</span> = <span class="keyword">array</span>(</div><div class="line">        <span class="string">'token'</span>=&gt;<span class="string">'9Ixxxxxxx'</span>,	<span class="comment">//填写应用接口的Token</span></div><div class="line">        <span class="string">'encodingaeskey'</span>=&gt;<span class="string">'d4o9WVg8sxxxxxxxxxxxxxxxxxxxxxx'</span>,<span class="comment">//填写加密用的EncodingAESKey</span></div><div class="line">        <span class="string">'appid'</span>=&gt;<span class="string">'wxa07979baxxxxxxxx'</span>,	<span class="comment">//填写高级调用功能的appid</span></div><div class="line">);</div><div class="line"><span class="variable">$weObj</span> = <span class="keyword">new</span> Wechat(<span class="variable">$options</span>);</div><div class="line"><span class="variable">$weObj</span><span class="variable">-&gt;valid</span>(); <span class="comment">//注意, 企业号与普通公众号不同，必须打开验证，不要注释掉</span></div><div class="line"><span class="variable">$type</span> = <span class="variable">$weObj</span><span class="variable">-&gt;getRev</span>()<span class="variable">-&gt;getRevType</span>();</div><div class="line"><span class="keyword">switch</span>(<span class="variable">$type</span>) {</div><div class="line">	<span class="keyword">case</span> Wechat::MSGTYPE_TEXT:</div><div class="line">			<span class="variable">$weObj</span><span class="variable">-&gt;text</span>(<span class="string">"hello, I'm wechat"</span>)<span class="variable">-&gt;reply</span>();</div><div class="line">			<span class="keyword">exit</span>;</div><div class="line">			<span class="keyword">break</span>;</div><div class="line">	<span class="keyword">case</span> Wechat::MSGTYPE_EVENT:</div><div class="line">			<span class="keyword">break</span>;</div><div class="line">	<span class="keyword">case</span> Wechat::MSGTYPE_IMAGE:</div><div class="line">			<span class="keyword">break</span>;</div><div class="line">	<span class="keyword">default</span>:</div><div class="line">			<span class="variable">$weObj</span><span class="variable">-&gt;text</span>(<span class="string">"help info"</span>)<span class="variable">-&gt;reply</span>();</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="License">License</h1>
+<p>This is licensed under the GNU LGPL, version 2.1 or later.<br>For details, see: <a href="http://creativecommons.org/licenses/LGPL/2.1/" target="_blank" rel="external">http://creativecommons.org/licenses/LGPL/2.1/</a></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/wechat-php-sdk/tags/项目/">项目</a><a href="/wechat-php-sdk/tags/文档/">文档</a><a href="/wechat-php-sdk/tags/使用/">使用</a><a href="/wechat-php-sdk/tags/示例/">示例</a><a href="/wechat-php-sdk/tags/公众号/">公众号</a><a href="/wechat-php-sdk/tags/企业号/">企业号</a><a href="/wechat-php-sdk/tags/功能/">功能</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/wechat-php-sdk/categories/项目文档/">项目文档</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="https://binsee.github.io/wechat-php-sdk/2014/09/22/README/" data-title="wechat-php-sdk项目 | wechat-php-sdk Blog" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/wechat-php-sdk/2014/09/22/aboutwiki/"  title="wiki文档说明">
+ <strong>NEXT:</strong><br/> 
+ <span>wiki文档说明
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#wechat-php-sdk项目"><span class="toc-number">1.</span> <span class="toc-text">wechat-php-sdk项目</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用详解"><span class="toc-number">1.1.</span> <span class="toc-text">使用详解</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#项目内容"><span class="toc-number">2.</span> <span class="toc-text">项目内容</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方API类库"><span class="toc-number">2.1.</span> <span class="toc-text">官方API类库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主要功能"><span class="toc-number">2.1.1.</span> <span class="toc-text">主要功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化动作"><span class="toc-number">2.1.2.</span> <span class="toc-text">初始化动作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新增Auth高级权限类方法"><span class="toc-number">2.1.3.</span> <span class="toc-text">新增Auth高级权限类方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#非官方扩展API类库"><span class="toc-number">2.2.</span> <span class="toc-text">非官方扩展API类库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#类主要方法"><span class="toc-number">2.2.1.</span> <span class="toc-text">类主要方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#授权登陆类库"><span class="toc-number">2.3.</span> <span class="toc-text">授权登陆类库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#类主要方法-1"><span class="toc-number">2.3.1.</span> <span class="toc-text">类主要方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#内嵌JS脚本"><span class="toc-number">2.4.</span> <span class="toc-text">内嵌JS脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#微信内嵌网页特殊功能js调用："><span class="toc-number">2.4.1.</span> <span class="toc-text">微信内嵌网页特殊功能js调用：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#全局返回码类"><span class="toc-number">2.5.</span> <span class="toc-text">全局返回码类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用方法"><span class="toc-number">2.5.1.</span> <span class="toc-text">使用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#企业号API类库"><span class="toc-number">2.6.</span> <span class="toc-text">企业号API类库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主要功能-1"><span class="toc-number">2.6.1.</span> <span class="toc-text">主要功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化动作-1"><span class="toc-number">2.6.2.</span> <span class="toc-text">初始化动作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#被动接口方法"><span class="toc-number">2.6.3.</span> <span class="toc-text">被动接口方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#主动接口方法"><span class="toc-number">2.6.4.</span> <span class="toc-text">主动接口方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#调用示例"><span class="toc-number">3.</span> <span class="toc-text">调用示例</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方Wechat调用示例："><span class="toc-number">3.1.</span> <span class="toc-text">官方Wechat调用示例：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#扩展包Wechatext调用示例:"><span class="toc-number">3.2.</span> <span class="toc-text">扩展包Wechatext调用示例:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#微信二维码Wechatauth登陆示例:"><span class="toc-number">3.3.</span> <span class="toc-text">微信二维码Wechatauth登陆示例:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#企业号API类库调用示例："><span class="toc-number">3.4.</span> <span class="toc-text">企业号API类库调用示例：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#License"><span class="toc-number">4.</span> <span class="toc-text">License</span></a></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="recentlist">
+  <p class="asidetitle">近期文章</p>
+  <ul class="entry">
+    
+      <li>
+        <a href="/wechat-php-sdk/2014/09/22/README/">wechat-php-sdk项目</a>
+      </li>
+    
+      <li>
+        <a href="/wechat-php-sdk/2014/09/22/aboutwiki/">wiki文档说明</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle"><a href="/wechat-php-sdk/tags">标签</a></p>
+		<ul class="clearfix">
+		
+			<li><a href="/wechat-php-sdk/tags/page/" title="page">page<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/wiki/" title="wiki">wiki<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/企业号/" title="企业号">企业号<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/使用/" title="使用">使用<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/公众号/" title="公众号">公众号<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/功能/" title="功能">功能<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/文档/" title="文档">文档<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/示例/" title="示例">示例<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/说明/" title="说明">说明<sup>1</sup></a></li>
+		
+			<li><a href="/wechat-php-sdk/tags/项目/" title="项目">项目<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle"><a href="/wechat-php-sdk/categories">分类</a></p>
+		<ul>
+		
+			<li><a href="/wechat-php-sdk/categories/项目文档/" title="项目文档">项目文档<sup>2</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle"><a href="/wechat-php-sdk/tags">标签云</a></p>
+    <div class="tagcloudlist clearfix">
+       <a href="/wechat-php-sdk/tags/page/" style="font-size: NaNpx;">page</a><a href="/wechat-php-sdk/tags/wiki/" style="font-size: NaNpx;">wiki</a><a href="/wechat-php-sdk/tags/企业号/" style="font-size: NaNpx;">企业号</a><a href="/wechat-php-sdk/tags/使用/" style="font-size: NaNpx;">使用</a><a href="/wechat-php-sdk/tags/公众号/" style="font-size: NaNpx;">公众号</a><a href="/wechat-php-sdk/tags/功能/" style="font-size: NaNpx;">功能</a><a href="/wechat-php-sdk/tags/文档/" style="font-size: NaNpx;">文档</a><a href="/wechat-php-sdk/tags/示例/" style="font-size: NaNpx;">示例</a><a href="/wechat-php-sdk/tags/说明/" style="font-size: NaNpx;">说明</a><a href="/wechat-php-sdk/tags/项目/" style="font-size: NaNpx;">项目</a>
+    </div>
+  </div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/wechat-php-sdk/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/wechat-php-sdk/archives/2014/09/">September 2014</a><span class="archive-list-count">2</span></li></ul>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+	  
+        <li>
+		  <a href="https://github.com/dodgepudding/wechat-php-sdk" target="_blank" title="wechat-php-sdk on Github for dodgepudding">dodgepudding's Github</a>
+        </li>
+      
+        <li>
+		  <a href="https://github.com/binsee/wechat-php-sdk" target="_blank" title="wechat-php-sdk on Github for binsee">binsee's Github</a>
+        </li>
+      
+    </ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hi!I&#39;m binsee. <br/>
+			This is my GitHub Blog for wechat-php-sdk.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		<a href="https://github.com/binsee/wechat-php-sdk" target="_blank" title="github"></a>
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2014 
+		
+		<a href="https://binsee.github.io/wechat-php-sdk" target="_blank" title="binsee">binsee</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/wechat-php-sdk/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"binsee"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+  </body>
+</html>
