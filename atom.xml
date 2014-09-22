@@ -4,7 +4,7 @@
   <subtitle><![CDATA[微信平台wechat-php-sdk开源项目，开发文档blog]]></subtitle>
   <link href="/wechat-php-sdk/atom.xml" rel="self"/>
   <link href="https://binsee.github.io/wechat-php-sdk/"/>
-  <updated>2014-09-22T11:39:47.444Z</updated>
+  <updated>2014-09-22T11:53:05.892Z</updated>
   <id>https://binsee.github.io/wechat-php-sdk/</id>
   
   <author>
@@ -42,24 +42,28 @@
     <link href="https://binsee.github.io/wechat-php-sdk/2014/09/22/aboutwiki/"/>
     <id>https://binsee.github.io/wechat-php-sdk/2014/09/22/aboutwiki/</id>
     <published>2014-09-22T08:04:29.000Z</published>
-    <updated>2014-09-22T09:32:51.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="wiki目录说明"><a href="https://github.com/binsee/wechat-php-sdk/tree/master/wiki" title="wechat-php-sdk项目上的 wiki目录" target="_blank" rel="external">wiki目录</a>说明</h1>
-<p>这个目录是<strong><a href="https://github.com/binsee/wechat-php-sdk&quot;wechat-php-sdk项目&quot;" target="_blank" rel="external">wechat-php-sdk</a></strong>项目的wiki文档<br>Make By：binsee</p>
-<h2 id="说明">说明</h2>
-<p><strong>这里的wiki文档可以让你更好的了解<code>wechat-php-sdk</code>项目，更好的使用。 </strong></p>
-<p><strong>欢迎对wiki文档内容进行补充，把<code>wechat-php-sdk</code>项目变得更清晰易懂。</strong></p>
-<h2 id="为你的github生成wiki">为你的github生成<a href="https://github.com/binsee/wechat-php-sdk/wiki" target="_blank" rel="external">wiki</a></h2>
+    <updated>2014-09-22T11:52:39.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="wechat-php-sdk项目wiki使用说明"><a href="https://github.com/binsee/wechat-php-sdk/tree/master/wiki" title="wechat-php-sdk项目上的wiki目录" target="_blank" rel="external">wechat-php-sdk项目wiki</a>使用说明</h1>
+<hr>
+<p><strong><a href="https://github.com/binsee/wechat-php-sdk" title="wechat-php-sdk项目" target="_blank" rel="external">wechat-php-sdk项目</a></strong>的wiki文档<br>Make By：binsee</p>
+<hr>
+<h1 id="说明">说明</h1>
+<p>项目名称：<strong><a href="https://github.com/binsee/wechat-php-sdk" target="_blank" rel="external">wechat-php-sdk</a></strong><br>项目wiki：<strong><a href="https://github.com/binsee/wechat-php-sdk/wiki" target="_blank" rel="external">https://github.com/binsee/wechat-php-sdk/wiki</a></strong></p>
+<blockquote>
+<p><strong>wiki文档可以让你更好的了解 wechat-php-sdk 项目，更好的使用。 </strong><br><strong>欢迎对wiki文档内容进行补充，把 wechat-php-sdk 项目变得更清晰易懂。</strong></p>
+</blockquote>
+<h1 id="为你的wechat-php-sdk生成wiki">为你的wechat-php-sdk生成<a href="https://github.com/binsee/wechat-php-sdk/wiki" target="_blank" rel="external">wiki</a></h1>
 <p><strong>如果你在github上fork了<code>wechat-php-sdk</code>项目，而且想为项目生成wiki，可以用这里的文件来生成。</strong></p>
-<h3 id="使用步骤：">使用步骤：</h3>
-<ol>
+<h2 id="使用步骤">使用步骤</h2>
+<ul>
 <li><p>在你的github上，fork或者创建<code>wechat-php-sdk</code>项目</p>
 </li>
 <li><p>激活项目wiki，已激活的请跳过</p>
 </li>
-</ol>
+</ul>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">进入项目的设置页面：</div><div class="line">http<span class="variable">s:</span>//github.<span class="keyword">com</span>/你的用户名/wechat-php-sdk/settings</div><div class="line">找到Features一栏，把 Wikis 选项打钩，就可以激活你项目的wiki了</div></pre></td></tr></table></figure>
 
-<ol>
+<ul>
 <li><p>进入项目的wiki页面：<br><code>https://github.com/你的用户名/wechat-php-sdk/wiki</code></p>
 </li>
 <li><p>点绿色的 <code>Create the first page</code> 按钮</p>
@@ -72,22 +76,22 @@
 </li>
 <li><p>进入新出现的 <code>wechat-php-sdk.wiki</code> 目录，把wiki目录下的文件都复制过来</p>
 </li>
-</ol>
+</ul>
 <blockquote>
-<p><strong>这里有个高级用法，就是使用连接方式把wiki目录链接过来，而不是复制</strong><br>windows下的用法:</p>
+<p><strong>这里有个高级用法，就是使用连接方式把wiki目录链接过来，而不是复制</strong><br>windows下的用法:<br>  如项目目录为：E:\wechat-php-sdk\<br>  项目wiki目录为:E:\wechat-php-sdk.wiki\<br>  执行命令：</p>
 </blockquote>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="special">#</span>如项目目录为：E:<span class="command">\wechat</span>-php-sdk<span class="command">\</span></div><div class="line"><span class="special">#</span>项目wiki目录为:E:<span class="command">\wechat</span>-php-sdk.wiki<span class="command">\</span></div><div class="line">执行命令：</div><div class="line">mklink /j E:<span class="command">\wechat</span>-php-sdk.wiki<span class="command">\wiki</span> E:<span class="command">\wechat</span>-php-sdk<span class="command">\wiki</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mklink /j E:<span class="command">\wechat</span>-php-sdk.wiki<span class="command">\wiki</span> E:<span class="command">\wechat</span>-php-sdk<span class="command">\wiki</span></div></pre></td></tr></table></figure>
 
 <blockquote>
 <p>这样的话，两个目录就会被联接到一起。<br>以后进行更改wiki在哪个目录都行，另一个目录都是同步的。<br>分别在 项目目录 和 项目wiki目录 进行git提交就可以了。 </p>
 </blockquote>
-<ol>
+<ul>
 <li><p>然后直接缓存上传即可。</p>
 </li>
 <li><p>现在去你github上项目的wiki目录里看一下吧</p>
 </li>
-</ol>
-<h2 id="生成page">生成page</h2>
+</ul>
+<h1 id="生成page">生成page</h1>
 <p><strong>你也可以将wiki文档，生成为个人站点，会更加直观。</strong></p>
 <p><strong>比如使用 Hexo 或者其他的框架之类。</strong></p>
 <p><strong>这块的话，请自行搜索相关资料。</strong>  </p>
