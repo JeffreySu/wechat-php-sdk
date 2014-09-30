@@ -9,9 +9,7 @@
     
     <meta name="author" content="binsee">
     
-    <meta name="description" content="2014/09/28 20:02:16    1、企业类库 增加 移动部门方法 moveDepartment($data)
-2014/09/25 22:23:25    1、企业类库 创建部门、更新部门 方法的数组参数增加新键值注释。    2、企业类库 错误码43009 内容修改
-2014/09/">
+    <meta name="description" content="2014/09/30 21:22:06    1、企业类库 补充 根据code获取成员id 方法 getUserId($code,$agentid=0)        最初创建企业类库时，把这个接口给遗漏了。感谢Talent.Miao提醒    2、更新一下 错误码类 的使用注释，因为有人可能不清楚">
     
     
     
@@ -239,7 +237,7 @@
     </p>
   <p class="article-time">
     <time datetime="2014-09-22T10:37:46.000Z" itemprop="datePublished">2014年09月22日</time>
-    更新日期:<time datetime="2014-09-28T12:02:37.000Z" itemprop="dateModified">2014年09月28日</time>
+    更新日期:<time datetime="2014-09-30T13:22:11.000Z" itemprop="dateModified">2014年09月30日</time>
     
   </p>
 </header>
@@ -251,7 +249,8 @@
 		
 		</div>
 		
-		<p>2014/09/28 20:02:16<br>    1、企业类库 增加 移动部门方法 moveDepartment($data)</p>
+		<p>2014/09/30 21:22:06<br>    1、企业类库 补充 根据code获取成员id 方法 getUserId($code,$agentid=0)<br>        最初创建企业类库时，把这个接口给遗漏了。感谢Talent.Miao提醒<br>    2、更新一下 错误码类 的使用注释，因为有人可能不清楚调用类库接口失败后<br>        只返回false，不知道从哪获得错误码的</p>
+<p>2014/09/28 20:02:16<br>    1、企业类库 增加 移动部门方法 moveDepartment($data)</p>
 <p>2014/09/25 22:23:25<br>    1、企业类库 创建部门、更新部门 方法的数组参数增加新键值注释。<br>    2、企业类库 错误码43009 内容修改</p>
 <p>2014/09/24 23:19:18<br>根据 @pkkgu 提出的需要，为checkAuth()增加一个$token参数，用于在特殊情况<br>下手动指定access_token值，以避免每次重复获取access_token到达API请求限值。</p>
 <p>2014/09/23 22:23:45<br>修改企业号开发类库中的：<br>二次验证接口 authSucc($userid) </p>
